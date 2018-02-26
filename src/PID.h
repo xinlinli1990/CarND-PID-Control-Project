@@ -1,3 +1,5 @@
+#include<iostream>
+
 #ifndef PID_H
 #define PID_H
 
@@ -16,6 +18,9 @@ public:
   double Kp;
   double Ki;
   double Kd;
+
+  double prev_cte;
+  double total_cte;
 
   /*
   * Constructor
